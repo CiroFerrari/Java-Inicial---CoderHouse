@@ -1,4 +1,4 @@
-package com.ferrari.Facturacion.controller;
+package com.ferrari.Cliente.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ferrari.Facturacion.middleware.ResponseHandler;
-import com.ferrari.Facturacion.model.Client;
-import com.ferrari.Facturacion.service.ClientService;
+import com.ferrari.Cliente.middleware.ResponseHandler;
+import com.ferrari.Cliente.model.Client;
+import com.ferrari.Cliente.model.ClientDTO;
+import com.ferrari.Cliente.service.ClientService;
 
 @RestController
 @RequestMapping(path = "/api/v1/client")
@@ -47,9 +48,7 @@ public class ClientController {
     public ResponseEntity<Object> getClient (@PathVariable() int id) {
         try {
             System.out.println(id);
-            Client clientFound = clientService.getClient(id);
-            System.out.println("CLIENT FOUND");
-            System.out.println(clientFound);
+            ClientDTO clientFound = clientService.getClient(id);
             return ResponseHandler.generateResponse(
                     "Client found successfully",
                     HttpStatus.OK,

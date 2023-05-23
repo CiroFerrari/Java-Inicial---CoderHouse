@@ -29,10 +29,12 @@ public class InvoiceService {
     invoiceCreated.setCreated_at(new Date().toString());
 
     // Para debugging, obtenemos el clientId por consola
+    System.out.println("CLIENT ID");
     System.out.println(requestInvoice.getClient_id());
 
     // Buscamos al cliente a través de su id
     Optional<Client> clientExist = clientRepository.findById(requestInvoice.getClient_id());
+    System.out.println("CLIENT IS EMPTY");
     System.out.println(clientExist.isEmpty());
     if (clientExist.isEmpty()) {
       throw new Exception("Client not found");

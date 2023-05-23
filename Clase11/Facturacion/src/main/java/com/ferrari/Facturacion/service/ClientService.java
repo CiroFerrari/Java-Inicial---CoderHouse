@@ -23,6 +23,9 @@ public class ClientService {
             return null;
         } else {
             return cliente.get();
+            // System.out.println("AQUÍ ESTÁ EL PROBLEMA");
+            // System.out.println(cliente.get());
+            // return null;
         }
     }
 }

@@ -1,7 +1,7 @@
 package com.ferrari.Facturacion.model;
 
 public class InvoiceDTO {
-  private int invoice_id;
+    private int invoice_id;
     private String created_at;
     private double total;
 

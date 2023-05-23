@@ -55,6 +55,10 @@ public class Client {
     return invoice;
   }
 
+  public void setInvoice(List<Invoice> invoice) {
+    this.invoice = invoice;
+  }
+
   // Override toString
   @Override
   public String toString() {
