@@ -1,0 +1,3 @@
+# Java API for Client, Product, and Invoice Management
+
+This Java project is built with Springboot and provides a basic API for managing clients, products, and invoices. It supports CRUD (Create, Read, Update, Delete) operations for clients and products, allowing you to store and retrieve client and product information. Additionally, you can create invoices and assign them to clients, calculating the total price based on the product price and quantity. The API can be tested and interacted with using POSTMAN or similar tools.
