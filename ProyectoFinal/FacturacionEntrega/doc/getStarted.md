@@ -2,7 +2,7 @@
 
 1. Clone this repository from GitHub using the following command:
    ```
-   git clone <repository_url>
+   git clone https://github.com/CiroFerrari/Java-Inicial---CoderHouse/tree/main/ProyectoFinal/FacturacionEntrega
    ```
 
 2. Open the cloned project in your favorite IDE, such as Visual Studio Code or IntelliJ IDEA.

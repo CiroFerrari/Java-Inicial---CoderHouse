@@ -83,7 +83,7 @@ public class ProductController {
       System.out.println(id);
       Product productUpdated = productService.putProduct(id, product);
       return ResponseHandler.generateResponse(
-          "Data retrieved successfully",
+          "Product updated successfully",
           HttpStatus.OK,
           productUpdated);
     } catch (Exception e) {
@@ -101,7 +101,7 @@ public class ProductController {
       System.out.println(id);
       Product productDeleted = productService.deleteProduct(id);
       return ResponseHandler.generateResponse(
-          "Data retrieved successfully",
+          "Product deleted successfully",
           HttpStatus.OK,
           productDeleted);
     } catch (Exception e) {
